@@ -4,21 +4,16 @@
   <image source="Neptune.jpg" width="2188" height="2185"/>
  </tileset>
  <tileset firstgid="4625" name="Ice" tilewidth="32" tileheight="32">
-  <image source="Ice.jpg" width="3960" height="2653"/>
+  <image source="Ice.jpg" width="256" height="256"/>
  </tileset>
- <layer name="Foreground" width="100" height="30">
+ <layer name="foreground" width="100" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAOBvLuAAAQ==
+   eJzFmsdaFVEMgO/MKK69tjU21orKE1hZY11jXWPjCbCxxrq2skZRnsC+xrq28gImzOQjX0hyysVh8X/nzE3mOElO5mSCfZ1OZx1wGDgCDAPXgRvATeAWMGn89rrhDfAWeAe8Bz4AH5k8pFcI9jccAA4Ch8TzTTCuGc82kakXq+vpWDJ5TSNyCgw/WtSxGBZ6ms+039YXNV1gA7AR2ARsBrYUS3JNj3xfAhWwBlgL9DX7w7MrJsaxe0Hqxep6OpZMXtOIPABn3C6W7Od6mm+130YaMK7HgOPACeBkUcd7hJGaA55dVoxj94KnF6vr6VgyeU0j8h34pPipV2i/x+x/Lwc8u3icY/ZCil6srqdjyeQ1jcgAOGprubRPe0XGJWb/ezng2TXFwBy/A9wF7gH3izr3pzL1YnU9HUsmr2lELkAsTpf6eRZLTA54+9/LAc+ueQbm+GfgC/AV+FbUuT+fqRer6+lYMnlNIzINTnxU6ueZR9FZmTMglPeeXf3lEpjj24DtwA5gZ1nnfn+Zpxer6+lYMnlNI7IA/Cz180zDy4OcMyCU955dowzM8TPAWeAccL6sc380Uy+kW3Tiz1DpJ7kejcgQ3LC70s8zrS7y8iDnDAjlveeXhwzM8cfAE+Ap8Kyscz/GbznEnKNWPOQz0oiMww0XK/08C8VZ5sH/sr1NLFulv0PnqbUO7tvfIPwD/G3eTzQic3DT82r1/bAae1gjpheA8DPU8j2f0zq4b/eA8l5gX1W/n2hE6H3h1awrZWvb5NSK1hkYk0MyhnxO6+D7+zLcfAW4WtXvJxoRqhNSfd1LfdwWqTWjVwfy95aVQzKGfE7rYA0zC35/Cbyq6vcTjQjVEqm+zrG1bWJrxpj+B39vWTkkY8jntA7/jqV3E+XEKKtPUn2dY2vbhGrGlB4J72FaOSRjyOe0Dv+O5XGgWPxoSPV1jq1to9WMIazvIN7DtHJIxpDPaR3+HTsqcgLjsKuqSfV1jq1to/VAQljfQbyHaeWQjCGf0zoDRhwoFmMNqb7OsbVttB5ICKsXwHuYVg7JGPI5rXPBiAPFYqYh1dc5traN1gMJYfUCeA/TyiEZQz6ndaaNOFAs8FvwRZXu6xxb2+ZhBlbfhfcwrRySMeRzWmfBiAOPxWyV7uscW9vmRwbYW/1VLu9p8B6mlUMyhnxO6wwF4kDfJam+zrG1bWgfpoC91cFqeU+D9zCtHJIx5HNaZzwQB/wmxJot1dc5trbNWAbYW71ULe9pkM+9HJIx5HNah/qFWhx4zZbq6xxb22YmA8tX5HMvh2QM+ZzW0dam/1PCa7ZUX2u2DHbhGbvLx9WWS/s9n4beW14OyX+Hz+cUOa/NZM2Wuq+0fWT5Y7xZ15KPBeSh+0Ny8lfMeykk93KIxlCuabWZrNlicnZceT7+zJY/6Blz93fo/pBc+smzMSSXeRaqW7k+1QRabSZrNmsN+QxSzu+x/AHpt4glH256ppac+mq5cvJbL7Wa1mOKjYOsw7TaTNZs/PsjpzeB3/WWP+CRFv92Y8knm56pJae+Wq6c/NZLrab1mGJrAFmHabWZrNn490dOb2Le8ce65m85lhz7pl3nfuqr5eYf+U2rSwa7OjyOPJZWHLx1ZE2g1QmyfvgHhgI2Eg==
   </data>
  </layer>
  <layer name="collision" width="100" height="30">
   <data encoding="base64" compression="zlib">
-   eJzVmFly2zAMhqku8vixS/TaHsXTPX532/hGXeJrxEfItL1C2sbnybQlZ/KPEQwAEjIl1Q/fkCIokgJAElATQmiOhHuR+5EHkYeR9j9YU581LwXaW14fCdq3lfZr2fOYdamtZTLw6UjQ9KzpHpyGvQ++I89j1qW2JZOBK4LlW7W5cpBbF2+ndS4rsWfuObcPwHlkQ8qvpL5hMvCoyX+vdN4dirR+rU1jGfzn9ttw10/fCG2559w+ANeRHSl/k/qOyYBlC4y7GQBp/VqbRhrHum9q3sHUt7U69/WTOFjX7MunpN4xGbB8CePuBkBav9amkcbR7puS+ED79tLzKEF9nvv6WZxg3ezLj6S+ZjLg9ZOuqYO0fq1No8usv9be0M6jBPV57uu8v+Tb6At7lPjQVFzMQ9jObV3V1Dv1f3pOaOdRgvo893Xen+qf2wHjWDHm1DkH7FFyxvTJZ2raEjHjz8ivIN/dHbNX4n3kA7GHFWdOnXPAHtQ/LJ14xu5rP8w7xJ71+oAnZ+gLbMDr8A/oZgg9eMaEnaR4WYvPpfOQl5o/eObpS8p9LGAPPJfmrLk4Sbs3pHZNP9hnnyNfwt24V4vPT4U6L7X97JlHA/q0ckIrB8T7pbkhj4e0vI37mdWu6Qd7VrovtPj8XKjzUjs3PPNoQJ9WTmjlgDl78lhyiHNb0w/27OPIk+Zu3KvF59dCnZfaWeGZRwP6tHJCy245e/JYcogYT9PP6hYeH60bPec6Eeq8XCl45tGAPq2c0MoBuT3xLNk4jTdEjKfpx9KTxplQ56V3zBzQGa9LaP9wSu3J86ox4j8PfC9puqZ1SV4rfqL38Yrol9td84GcPSmlMduY5OxAdWXZo9Y/dc99LL3T5/3c+QIwdml7X0r1a9mjVhzluY/7xGee/8CWjMqboOeIz+Jans8PyzMl0rzQu2SPWv/Uc/FVrl/p+yX/gS0ZlVt5MezhjdHoGBK7sNc7tQfmQ3noP3XPfTzE+8Djy1ZeDL14YzQ6hgTikY6cV9wWKGvFWlO+7/FlKy+GTrxxFh1DQlrzBWE7l9slUp9vMUD4HvkRuSRAftnKjCX3+LJkAw3YhvaX7ofUTnMnrr8tk0nP3B5W3z/x2/+moG0Wwk27B3LaNoX8EH+mepXuc95fuh9gD8mXc/aQ5JKNaPki2uFl5FVkQYB8MZMZS16isxKk+5yPLd0P1B7SmeOxh2WHqc6jG+f7JTorQbrPS+4Hyx45Xfexy9jn0WLmP69KdJbDe5/TOa39YZ1Bku5ze2rq88iS1wbz5ebW5s/tj3+KtnRT
-  </data>
- </layer>
- <layer name="Ice" width="100" height="30">
-  <data encoding="base64" compression="zlib">
-   eJzt0bEJACAQBMFvyDK0/5KMH1PhBGcSA4OHvSoAAAAAAAAAAABS5qha43xf+f9Nurc9unRve3Tp3vbo0r3t0aV7p/e4eX8DdJpTMg==
+   eJztl0sOgzAMBbOrcgp6lN4Wjkk3kVAUOz9DLDQjZUFNhXmD2xACAAAAAAAA7DGEI67uAhL48AU+1nN1gA9f4MOW2TzxYQs+fNGap3QePmyxno90jKN2LPdHzIct0vM9+n2YYyTPp94/3vyfdde9ectm+/fyddRPL2/bXz3tI13P6rrMx/y1LJ2s9mHt8wkfqef9so5Y/ry0tPv1Xm9hi/LqcXN9d8rzO7Ja6Tj3oZ07msfqei8z8yE9yzUfpXrJET76yHOUvNR8aB5W5/kGH7WsR7xoPXiu93LXfGi/QaXsazOl9bC6Li2N2v7l92lzrWUuzccJrcfgMw==
   </data>
  </layer>
  <objectgroup name="Enemy">
