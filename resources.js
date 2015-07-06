@@ -1,8 +1,12 @@
-var resources = [
+var resources = [{
+  name: "levelSprites",
+  type: "image",
+  src: "levelSprites.png"
+},
   {
     name: "level1",
     type: "tmx",
-    src: "level1.tmx"
+    src: "Saturn.tmx"
   },
   {
     name: "player",
@@ -17,34 +21,27 @@ var resources = [
     type: "image",
     src: "coin.png"
   },
-  {
-    name: "rocket",
-    type: "image",
-    src: "rocket.png"
-  },
-  { name: "badGuy",
-    type: "image",
-    src: "badGuy.png"
-  },
-  { name: "badGuy",
-    type: "image",
-    src: "badGuy.png"
-  },
+
   { name: "ice",
     type: "image",
     src: "ice.jpg"
-  },
-  { name: "rocket",
-    type: "image",
-    src: "rocket.png"
-  },
-  { name: "sky",
-    type: "image",
-    src: "sky.gif"
   },
   { name: "pluto",
     type: "image",
     src: "pluto.jpg"
   },
+  { name: "sky",
+    type: "image",
+    src: "sky.gif"
+  },
+  { name: "saturn",
+    type: "image",
+    src: "saturn.jpg"
+  },
+  { name: "iron",
+    type: "image",
+    src: "iron.jpg"
+  },
+
 
 ];
