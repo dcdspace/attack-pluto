@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="30" tilewidth="32" tileheight="32" nextobjectid="17">
+ <tileset firstgid="1" name="Neptune" tilewidth="32" tileheight="32">
+  <image source="Neptune.jpg" width="2188" height="2185"/>
+ </tileset>
+ <tileset firstgid="4625" name="Ice" tilewidth="32" tileheight="32">
+  <image source="Ice.jpg" width="3960" height="2653"/>
+ </tileset>
+ <layer name="Foreground" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAOBvLuAAAQ==
+  </data>
+ </layer>
+ <layer name="collision" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzVmFly2zAMhqku8vixS/TaHsXTPX532/hGXeJrxEfItL1C2sbnybQlZ/KPEQwAEjIl1Q/fkCIokgJAElATQmiOhHuR+5EHkYeR9j9YU581LwXaW14fCdq3lfZr2fOYdamtZTLw6UjQ9KzpHpyGvQ++I89j1qW2JZOBK4LlW7W5cpBbF2+ndS4rsWfuObcPwHlkQ8qvpL5hMvCoyX+vdN4dirR+rU1jGfzn9ttw10/fCG2559w+ANeRHSl/k/qOyYBlC4y7GQBp/VqbRhrHum9q3sHUt7U69/WTOFjX7MunpN4xGbB8CePuBkBav9amkcbR7puS+ED79tLzKEF9nvv6WZxg3ezLj6S+ZjLg9ZOuqYO0fq1No8usv9be0M6jBPV57uu8v+Tb6At7lPjQVFzMQ9jObV3V1Dv1f3pOaOdRgvo893Xen+qf2wHjWDHm1DkH7FFyxvTJZ2raEjHjz8ivIN/dHbNX4n3kA7GHFWdOnXPAHtQ/LJ14xu5rP8w7xJ71+oAnZ+gLbMDr8A/oZgg9eMaEnaR4WYvPpfOQl5o/eObpS8p9LGAPPJfmrLk4Sbs3pHZNP9hnnyNfwt24V4vPT4U6L7X97JlHA/q0ckIrB8T7pbkhj4e0vI37mdWu6Qd7VrovtPj8XKjzUjs3PPNoQJ9WTmjlgDl78lhyiHNb0w/27OPIk+Zu3KvF59dCnZfaWeGZRwP6tHJCy245e/JYcogYT9PP6hYeH60bPec6Eeq8XCl45tGAPq2c0MoBuT3xLNk4jTdEjKfpx9KTxplQ56V3zBzQGa9LaP9wSu3J86ox4j8PfC9puqZ1SV4rfqL38Yrol9td84GcPSmlMduY5OxAdWXZo9Y/dc99LL3T5/3c+QIwdml7X0r1a9mjVhzluY/7xGee/8CWjMqboOeIz+Jans8PyzMl0rzQu2SPWv/Uc/FVrl/p+yX/gS0ZlVt5MezhjdHoGBK7sNc7tQfmQ3noP3XPfTzE+8Djy1ZeDL14YzQ6hgTikY6cV9wWKGvFWlO+7/FlKy+GTrxxFh1DQlrzBWE7l9slUp9vMUD4HvkRuSRAftnKjCX3+LJkAw3YhvaX7ofUTnMnrr8tk0nP3B5W3z/x2/+moG0Wwk27B3LaNoX8EH+mepXuc95fuh9gD8mXc/aQ5JKNaPki2uFl5FVkQYB8MZMZS16isxKk+5yPLd0P1B7SmeOxh2WHqc6jG+f7JTorQbrPS+4Hyx45Xfexy9jn0WLmP69KdJbDe5/TOa39YZ1Bku5ze2rq88iS1wbz5ebW5s/tj3+KtnRT
+  </data>
+ </layer>
+ <layer name="Ice" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0bEJACAQBMFvyDK0/5KMH1PhBGcSA4OHvSoAAAAAAAAAAABS5qha43xf+f9Nurc9unRve3Tp3vbo0r3t0aV7p/e4eX8DdJpTMg==
+  </data>
+ </layer>
+ <objectgroup name="Enemy">
+  <object id="1" x="1875.76" y="848.485" width="515.152" height="69.697"/>
+  <object id="2" x="260.606" y="721.212" width="281.818" height="39.3939"/>
+  <object id="4" x="2466.67" y="854.545" width="124.242" height="66.6667"/>
+  <object id="5" x="1000" y="739.394" width="51.5152" height="24.2424"/>
+  <object id="6" x="1515.15" y="724.242" width="48.4848" height="42.4242"/>
+  <object id="7" x="1245.45" y="203.03" width="69.697" height="45.4545"/>
+  <object id="10" x="745.455" y="360.606" width="48.4848" height="51.5152"/>
+  <object id="11" x="1545.45" y="757.576" height="3.0303"/>
+ </objectgroup>
+ <objectgroup name="Rocket">
+  <object id="12" x="2896.97" y="369.697" width="281.818" height="396.97"/>
+ </objectgroup>
+ <objectgroup name="Coin">
+  <object id="13" x="2072.73" y="403.03" width="63.6364" height="60.6061"/>
+  <object id="14" x="2654.55" y="766.667" width="51.5152" height="54.5455"/>
+  <object id="15" x="951.515" y="339.394" width="48.4848" height="51.5152"/>
+  <object id="16" x="554.545" y="406.061" width="57.5758" height="57.5758"/>
+ </objectgroup>
+</map>
