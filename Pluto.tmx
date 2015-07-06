@@ -10,16 +10,16 @@
   <image source="ice.jpg" width="256" height="256"/>
  </tileset>
  <tileset firstgid="215" name="alien-pluto1-page-001" tilewidth="32" tileheight="32">
-  <image source="../Downloads/alien-pluto1-page-001.jpg" width="2538" height="3296"/>
+  <image source="alien-pluto1-page-001.jpg" width="2538" height="3296"/>
  </tileset>
  <tileset firstgid="8352" name="dTrM8gnT9" tilewidth="32" tileheight="32">
   <image source="dTrM8gnT9.png" width="342" height="598"/>
  </tileset>
  <tileset firstgid="8532" name="alien-pluto1-page-001" tilewidth="32" tileheight="32">
-  <image source="../Downloads/alien-pluto1-page-001.jpg" width="2538" height="3296"/>
+  <image source="alien-pluto1-page-001.jpg" width="2538" height="3296"/>
  </tileset>
  <tileset firstgid="16669" name="alien.1.1.1.1.1.1.1.1.1.1-page-001" tilewidth="32" tileheight="32">
-  <image source="../Downloads/alien.1.1.1.1.1.1.1.1.1.1-page-001.jpg" width="1269" height="1648"/>
+  <image source="alien.1.1.1.1.1.1.1.1.1.1-page-001.jpg" width="1269" height="1648"/>
  </tileset>
  <tileset firstgid="18658" name="star-blue-sky-animated" tilewidth="32" tileheight="32">
   <image source="star-blue-sky-animated.gif" width="432" height="396"/>
