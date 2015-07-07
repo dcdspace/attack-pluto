@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="20" tilewidth="32" tileheight="32" nextobjectid="44">
+ <tileset firstgid="1" name="pluto image" tilewidth="32" tileheight="32">
+  <image source="pluto image.jpg" width="237" height="213"/>
+  <tile id="8">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="43" name="cloud" tilewidth="32" tileheight="32">
+  <image source="cloud.png" width="400" height="307"/>
+ </tileset>
+ <tileset firstgid="151" name="ice" tilewidth="32" tileheight="32">
+  <image source="../SharedGraphics/ice.jpg" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="215" name="alien-pluto1-page-001" tilewidth="32" tileheight="32">
+  <image source="alien-pluto1-page-001.jpg" width="134" height="175"/>
+ </tileset>
+ <tileset firstgid="235" name="dTrM8gnT9" tilewidth="32" tileheight="32">
+  <image source="../SharedGraphics/rocket.png" width="342" height="598"/>
+ </tileset>
+ <tileset firstgid="415" name="alien-pluto1-page-001" tilewidth="32" tileheight="32">
+  <image source="alien-pluto1-page-001.jpg" width="134" height="175"/>
+ </tileset>
+ <tileset firstgid="435" name="star-blue-sky-animated" tilewidth="32" tileheight="32">
+  <image source="star-blue-sky-animated.gif" width="432" height="396"/>
+ </tileset>
+ <tileset firstgid="591" name="ice" tilewidth="32" tileheight="32">
+  <image source="../SharedGraphics/ice.jpg" width="256" height="256"/>
+ </tileset>
+ <layer name="Parallax_layer2" width="100" height="20">
+  <properties>
+   <property name="ratio" value="0.35"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJy9WcF20zAQZF1yTSH//0sp5RpKrgZyTUuPyA/v62Q8I8nFj8O+uJYlrXa0Mys1hg8fYrah2F2xj8V2xfbF7ot9Kva52AHeHeOvnWYbZ8t334o9Ffse/tvrbAE+7M28+HyA9mnch2Jfij0W+1rsudhLsd/FXmM5luqT/jyHbuf4jOK7/DvXm2vLeOQY+B3PczTvD+D/tKbEqIbDEd79WIHDvhMHblfYn2O5rxAH1yf9ce0899XggfHMtWU89g0szvPcqi3X0sKB/UKfenFgDFxOIg6M/c9iv4pdYtn/IvzhPmvHjGEZt1Pc4pnxz7x7EZhhzC+h825qU3tK4aDsvTggH+X3LidOccsxyE/MTUfhD/Z575icGyP8Jp7HuOU6h8V5nkflHfLY/8QB+zksWrzO/MTfX2MZn54xGVuFxxV+E8/pW1xHLTd2Iu9asd0Sh8lcP7WGHl5PfnPfB7SvGfMR1skxZU1A3eZccfow5QbuoZ586MXsX3BQWNR4X9VONR1QvrfGZK1u4YE1qNIOxVWo0S0ceF+8FwfF465fD+8rXq/pgOOvXq1wWsw6/gTfYK44LKY9oPwfQ2O0FQ6nzn49vI+8rmod1oEaf6kxH2DNiAfzjdNxrLHuB89Tl3kPZJs6P2yJg9rjtX4t3nd1Z00HavzV8ps5iutRbMPzJM9Vq6l2w5L7emurXn2o5YTDYW3cohFrxkJxUw8W+Iz1KOcNchPrBscYa6oD4JH7aqt6qScnevisxul8lnZ9uL1WG4fwnZ9ZAzB2Y9yevx2HZl5kbuR51dVKW+DQmxPujFCLm8OC+6hxa/cxjMWVnpWWIE65H1A3apqBufE6v8eaeoz1OPA61uSEu3t09b+rvVWs3bhrsIhhiQVqB3NX7hHkzdH48Uq5MeFyjrd7TcRgCxxaOcFc0Kr/Vd3nYl0b12HBOZ2+Mxa8H/DuVt1VXY0fu+HNEJesI3vvvHtxcDnB99K4v5VWMAatWLf0xGHh7mlwzzsd5xoXeTMG7Udy/GG45aysI1t33ltoPZ+TuO5D3ne1d0u7eVx1ruD7l557GtQszE9V42L//aC1EP1BXLKOdDq3hdbzfq7V126uHu3u0QtXc7icxjoW77zQp1qNy/jw/SlzaK3+VrmwFgfFu8oUBswRLe2u6UWr5qidh7COTV+uog3vRu7m9bOWcE5zHe/+d+ZyofdMrv5ndqqYwtth4bTbcVhPzeG4AWOKeNRq3DyDjnGbO4q3djTvZH8A3eml+g==
+  </data>
+ </layer>
+ <layer name="Parallax_layer1" width="100" height="20">
+  <properties>
+   <property name="ratio" value="0.25"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJylmImPFEUUxqdKcbyyXiiaAUVUAiqiGPBCMXiB4l+7HiBivPAgwWO9EpxR1yM4i4oaXDxQ/MrtL/v1m6quqjbZ33ZXz0z1q+8d9brn3WAwD54Dz4MXwIvgIDgETjR8DsZgAr4AX4KvwCL4GnwDvgXfAfy1iM37EjgMXgZHwCsZO+z3OfdxN8ucHwyuAFeCq8DV4BqwFlwLrgPrwPXgBnASvzmTwPkVOP4NLIOz4HfwB/gT/AXOgb/BP+C8WUO4x/dgCpbAKfAD+BH8BE6Dn5t1vYp/r4HXwRvgTXAUvNXMUzLXAvgF/Cr61egb/NFlx9vgHfCu8TfjRRlBv/VgA7gR3AQ2gpvBJnALuBXcBjb7tu6WuQaOPbgAXAjWgIvAEFwMLgGX+rZ9XEOpLxlj74H3wQfgw0bfj1y/uKB+pfoeE41TdnwMPgGfGn8wXpQt0GQruB3cAe4E28BdYDu4G9wDdoB7/Up8zPk4owaOS/OO9nENpb7M1aOauLhM7Aj6dflZ9f1MNC6pi+qLWI3ZCTt2gfvA/eAB8CB4COwGD4NHwB7wqC/LY/qlNO9oI9eQ8uVwsOLLcBwO8vWob1wsZvwc23dKayzr4lofZy94DDwOngBPgqfAPrAfPA2eAQfAs74sj0PO1eRd0EDXYH1J/S25elQbF6EeU79afWvrotb3WI2xpPK1JI9DztXmHddg88/64LBcy9Wj2rgI9Zj69dG3ti7GdN+SIJWvJXm8t0fecQ3qj1RekFw96hMX1K+PvrV1kVrX9nI6rs3jgy4dozEttR7m/JGrR33iglr02XdoR07f8N0+vfKxphbpuDaPj7p0jI4ytuf80aceaW1Y79Na1O47akdtr1zby7XGFXl8eaN3KkbnM7ER84GT89L81nqkNTnol9Ki1s8ac/+3V+a1VC+n4z55TA6ZPOD1lO0xX6g/ap7VUr5K7Ye1+47GXE2vTPt0D+C11B6gY5vHoWZtTNQd6w/VIWh43MVjg3ovum5/1MRfzFd8honth7X7jtbomj3WDeJ7AO3WPSDYe9619wSbx+H32yprJvU8kbB9KLHRtX+UPqulfDVMaGH3wz69VmxO2qt6Ovbtg9n5ORfn79KCeXzWrVJaM/X52uqR28OV0h5vIeErPsPktC6t0dQvMGm0D3OOXZtwvatXzq2b94vVJPoiVjNdx550qvFFjf6W0h5PdTgt55pjXVrbGq26a6/Fa5xzqbnX1BzVHv6m5t0Sx7l327bu8F6xmP2vRprYS+m+zq/uH0caHXdEYppr1PrBPKJd55pzm2Mb/KxW1MLWaPWHzQnNDeuLZTNekuNWsT/Q1ctxHOvjxk2MhuOCm41ZjReN2TV+9X0NPx83OjF2N4mP9L1jGO+J1A+uTXu8kjyj/VPX9t32RK2ZGD15rkwyUCced/n2PF29HMdak8Zil9qkMcvv8TPVXc/1c60lRGOD/cCBSH5zbfZZzdYf3s/uRctCmGe3b69P9VI9ea5Y/1hfhaPtlXWerl6O45PGD0uuvQYbR1wD76O5qvGln0/drL/smDlU+qxmazHvt1nyR3VVLXR9qlfqPezIx/2jTJoj9d2ZIdV7nzF+0Hwb+dk40jVQh6m5HjtXv9g59fxf62PyNA==
+  </data>
+ </layer>
+ <layer name="ice" width="100" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1ckKwjAUheFwn1J3ii6cFk4Lp4XTQq0P7QEpKWJrrE3t4v/gcMVeckNIqXMAAAAAAAAAAKBOPXOub8/fLdW2xZ030PpD83WkjJVJ5LlNkj3zIh31dHP6Qtd415f9b6o6M1/nykJZWv4aobPL7O2b51XuJUR6Z0Pmlj2zlXrW5utG2Sq7P74fRXuv8/xfpXc2pr3WP5ivR+WknCPN/fS+/rpWFb150jtbRuj8i3qu5utNSZR7g74fVZ/7A4zsJoE=
+  </data>
+ </layer>
+ <layer name="collision" width="100" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztk0sOwCAIRFnrLXr/Q3bThbEV+amkmZeQNAYQZiwRAAAAAAAAYCf1CXCeSvAjC5XefsCbtYy07b3I5sHFxN/48qL3I6NHWSiD7y84HUc+ZNDe8vaj/pdCc11HubPaaD92eXXKj9KFNJc7a8H/YeshibbGUq8Nz9ySvB07RGngyfP0aM84ZndJZvDs4O2/0jft7NI5OTy12l7R73C1H6vvsGiogdvJuqemznpHVA9pLceJN7hD9xsFkjiM
+  </data>
+ </layer>
+ <objectgroup name="rocket">
+  <object id="2" name="rocket" x="2971" y="176" width="226" height="303">
+   <properties>
+    <property name="image" value="rocket"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="EnemyEntities">
+  <object id="11" name="EnemyEntity" x="2365" y="268" width="230" height="50"/>
+  <object id="15" name="EnemyEntity" x="1785" y="435" width="235" height="43"/>
+  <object id="22" name="EnemyEntity" x="831" y="448" width="160" height="30"/>
+  <object id="23" name="EnemyEntity" x="890" y="280" width="41" height="38"/>
+  <object id="24" name="EnemyEntity" x="607" y="446" width="158" height="32"/>
+ </objectgroup>
+ <objectgroup name="player">
+  <object id="26" name="player" x="41" y="385" width="50" height="30">
+   <properties>
+    <property name="image" value="player"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="coin">
+  <object id="30" name="coin" x="293" y="418">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="31" name="coin" x="476" y="274">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="32" name="coin" x="1372" y="207">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="33" name="coin" x="1435" y="286">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="34" name="coin" x="1062" y="251">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="35" name="coin" x="1156" y="141">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="36" name="coin" x="1838" y="342">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="37" name="coin" x="1956" y="340">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="39" name="coin" x="2324" y="238">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="41" name="coin" x="2697" y="291">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
