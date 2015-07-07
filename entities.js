@@ -26,10 +26,10 @@ var PlayerEntity = me.ObjectEntity.extend({
     me.state.change(me.state.MENU);
   },
   nextLevel: function () {
-    me.gamestat.updateValue("currentLevel", 1);
+    me.gamestat.updateValue("currentLevel", me.gamestat.getItemValue('currentLevel') + 1);
     me.levelDirector.loadLevel("level2");
-    me.gamestat.updateValue("coins", 0);
-    me.gamestat.updateValue("totalCoins", 3);
+    me.gamestat.setValue("coins", 0);
+    me.gamestat.setValue("totalCoins", 3);
 
   },
   youWin: function() {
@@ -49,12 +49,13 @@ var RocketEntity = me.CollectableEntity.extend( {
 
   },
   onCollision: function (res, obj) {
-    if(me.gamestat.getItemValue("coins") === me.gamestat.getItemValue("totalCoins")) {
+    if(me.gamestat.getItemValue("coins") >= me.gamestat.getItemValue("totalCoins")) {
       //advance to next level
       obj.nextLevel();
     }
     else {
       alert ('please collect at least 3 coins to proceed!');
+      console.log("coins: " + me.gamestat.getItemValue('coins') + "total: " + me.gamestat.getItemValue('totalCoins'));
       this.collidable = false;
     }
   }
@@ -64,8 +65,9 @@ var CoinEntity = me.CollectableEntity.extend({
     this.parent(x, y, settings);
   },
   onCollision : function (res, obj) {
-    RocketEntity.collidable = true;
     me.gamestat.updateValue("coins", 1);
+    console.log("coins: " + me.gamestat.getItemValue('coins'));
+    RocketEntity.collidable = true;
     this.collidable = false;
     me.game.remove(this);
     //if(me.gamestat.getItemValue("coins") === me.gamestat.getItemValue("totalCoins")){

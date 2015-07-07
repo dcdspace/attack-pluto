@@ -9,6 +9,7 @@ var jsApp = {
     //    me.plugin.register.defer(this, me.debug.Panel, "debug", me.input.KEY.V);
     //  });
     //}
+    me.audio.init("mp3,ogg");
     me.loader.onload = this.loaded.bind(this);
     me.loader.preload(resources);
     me.state.change(me.state.LOADING);
@@ -23,7 +24,7 @@ var jsApp = {
     me.entityPool.add("EnemyEntity", EnemyEntity);
     me.state.set(me.state.PLAY, new PlayScreen());
     me.state.set(me.state.MENU, new TitleScreen());
-    me.state.transition("fade", "#2FA2C2", 250);
+    me.state.transition("fade", "#00000", 250);
     me.state.change(me.state.MENU);
   }
 };

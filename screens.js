@@ -4,6 +4,7 @@ var PlayScreen = me.ScreenObject.extend({
   },
   onResetEvent: function() {
     me.levelDirector.loadLevel("level1");
+    //me.audio.playTrack("rocketman");
     me.input.bindKey(me.input.KEY.LEFT, "left");
     me.input.bindKey(me.input.KEY.RIGHT, "right");
     document.getElementById('game_state').innerHTML = "Collect all of the coins!";
@@ -26,10 +27,11 @@ var TitleScreen = me.ScreenObject.extend({
   update: function() {
     if (me.input.isKeyPressed('jump')) {
       me.state.change(me.state.PLAY);
+      //me.audio.playTrack("rocketman.mp3");
     }
     return true;
   },
   draw: function(context){
-    context.drawImage(this.title, 50, 50);
+    context.drawImage(this.title, 0, 0);
   }
 });
