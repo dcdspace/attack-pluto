@@ -1,12 +1,13 @@
-var resources = [{
-  name: "levelSprites",
-  type: "image",
-  src: "levelSprites.png"
-},
+var resources = [
   {
     name: "level1",
     type: "tmx",
-    src: "Saturn.tmx"
+    src: "Pluto/Pluto.tmx"
+  },
+  {
+    name: "level2",
+    type: "tmx",
+    src: "Saturn/Saturn.tmx"
   },
   {
     name: "player",
@@ -21,27 +22,38 @@ var resources = [{
     type: "image",
     src: "coin.png"
   },
-
+  { name: "badguy",
+    type: "image",
+    src: "Pluto/badguy.png"
+  },
   { name: "ice",
     type: "image",
-    src: "ice.jpg"
+    src: "SharedGraphics/ice.jpg"
   },
   { name: "pluto",
     type: "image",
-    src: "pluto.jpg"
+    src: "Pluto/pluto.jpg"
   },
   { name: "sky",
     type: "image",
-    src: "sky.gif"
+    src: "Pluto/sky.gif"
+  },
+  { name: "cloud",
+    type: "image",
+    src: "Pluto/cloud.png"
   },
   { name: "saturn",
     type: "image",
-    src: "saturn.jpg"
+    src: "Saturn/saturn.jpg"
   },
   { name: "iron",
     type: "image",
-    src: "iron.jpg"
+    src: "Saturn/iron.jpg"
   },
+  { name: "rocket",
+    type: "image",
+    src: "SharedGraphics/rocket.png"
+  }
 
 
 ];

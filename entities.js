@@ -19,6 +19,9 @@ var PlayerEntity = me.ObjectEntity.extend({
     }
     return false;
   },
+  playerJump: function () {
+    this.doJump();
+  },
   gameOver: function() {
     me.state.change(me.state.MENU);
   },
@@ -40,74 +43,72 @@ var PlayerEntity = me.ObjectEntity.extend({
   }
 });
 
-////var RocketEntity = me.ObjectEntity.extend( {
-////  init: function(x, y, settings) {
-////    this.parent(x, y, settings);
-////    settings.image = "rocket";
-////    settings.spritewidth = 16;
-////    this.parent(x, y, settings);
-////
-////  }
-////});
-//var CoinEntity = me.CollectableEntity.extend({
-//  init: function(x, y, settings) {
-//    this.parent(x, y, settings);
-//  },
-//  onCollision : function (res, obj) {
-//    me.gamestat.updateValue("coins", 1);
-//    this.collidable = false;
-//    me.game.remove(this);
-//    if(me.gamestat.getItemValue("coins") === me.gamestat.getItemValue("totalCoins")){
-//      if (me.gamestat.getItemValue("currentLevel") == 2) {
-//        obj.gameOver();
-//      }
-//      else
-//      {
-//        obj.nextLevel();
-//      }
-//    }
-//  }
-//});
-//var EnemyEntity = me.ObjectEntity.extend({
-//  init: function(x, y, settings) {
-//    settings.image = "badguy";
-//    settings.spritewidth = 16;
-//    this.parent(x, y, settings);
-//    this.startX = x;
-//    this.endX = x + settings.width - settings.spritewidth;
-//    this.pos.x = this.endX;
-//    this.walkLeft = true;
-//    this.setVelocity(2);
-//    this.collidable = true;
-//  },
-//  onCollision: function(res, obj) {
-//    console.log("player: " + obj.bottom + "snake: " + this.bottom);
-//    if (obj.bottom < this.bottom) {
-//     me.game.remove(this);
-//    }
-//    else {
-//      obj.gameOver();
-//    }
-//  },
-//  update: function() {
-//    if (!this.visible){
-//      return true;
-//    }
-//    if (this.alive) {
-//      if (this.walkLeft && this.pos.x <= this.startX) {
-//        this.walkLeft = false;
-//      }
-//      else if (!this.walkLeft && this.pos.x >= this.endX){
-//        this.walkLeft = true;
-//      }
-//      this.doWalk(this.walkLeft);
-//    }
-//    else { this.vel.x = 0; }
-//    this.updateMovement();
-//    if (this.vel.x!=0 || this.vel.y!=0) {
-//      this.parent(this);
-//      return true;
-//    }
-//    return false;
-//  }
-//});
+var RocketEntity = me.ObjectEntity.extend( {
+  init: function(x, y, settings) {
+    this.parent(x, y, settings);
+
+  }
+});
+var CoinEntity = me.CollectableEntity.extend({
+  init: function(x, y, settings) {
+    this.parent(x, y, settings);
+  },
+  onCollision : function (res, obj) {
+    me.gamestat.updateValue("coins", 1);
+    this.collidable = false;
+    me.game.remove(this);
+    if(me.gamestat.getItemValue("coins") === me.gamestat.getItemValue("totalCoins")){
+      if (me.gamestat.getItemValue("currentLevel") == 2) {
+        obj.gameOver();
+      }
+      else
+      {
+        obj.nextLevel();
+      }
+    }
+  }
+});
+var EnemyEntity = me.ObjectEntity.extend({
+  init: function(x, y, settings) {
+    //settings.image = "badguy";
+    //settings.spritewidth = 16;
+    this.parent(x, y, settings);
+    this.startX = x;
+    this.endX = x + settings.width - settings.spritewidth;
+    this.pos.x = this.endX;
+    this.walkLeft = true;
+    this.setVelocity(4);
+    this.collidable = true;
+  },
+  onCollision: function(res, obj) {
+    console.log("player: " + obj.bottom + "snake: " + this.top);
+    if (obj.bottom < this.top + 3) {
+      obj.forceJump();
+      me.game.remove(this);
+    }
+    else {
+      obj.gameOver();
+    }
+  },
+  update: function() {
+    if (!this.visible){
+      return true;
+    }
+    if (this.alive) {
+      if (this.walkLeft && this.pos.x <= this.startX) {
+        this.walkLeft = false;
+      }
+      else if (!this.walkLeft && this.pos.x >= this.endX){
+        this.walkLeft = true;
+      }
+      this.doWalk(this.walkLeft);
+    }
+    else { this.vel.x = 0; }
+    this.updateMovement();
+    if (this.vel.x!=0 || this.vel.y!=0) {
+      this.parent(this);
+      return true;
+    }
+    return false;
+  }
+});
