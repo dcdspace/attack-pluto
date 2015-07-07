@@ -7,7 +7,7 @@ var resources = [
   {
     name: "level2",
     type: "tmx",
-    src: "Saturn/Saturn.tmx"
+    src: "Neptune/Neptune.tmx"
   },
   {
     name: "player",
@@ -17,6 +17,10 @@ var resources = [
   { name: "titleScreen",
     type: "image",
     src: "titleScreen.png"
+  },
+  { name: "Neptune",
+    type: "image",
+    src: "Neptune/Neptune.jpg"
   },
   { name: "coin",
     type: "image",

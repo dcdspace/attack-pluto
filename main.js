@@ -13,7 +13,7 @@ var jsApp = {
     me.loader.preload(resources);
     me.state.change(me.state.LOADING);
     me.gamestat.add("coins", 0);
-    me.gamestat.add("totalCoins", 5);
+    me.gamestat.add("totalCoins", 3);
     me.gamestat.add("currentLevel", 1);
   },
   loaded: function() {

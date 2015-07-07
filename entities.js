@@ -12,7 +12,7 @@ var PlayerEntity = me.ObjectEntity.extend({
     if (me.input.isKeyPressed('jump')) { this.doJump(); }
     me.game.collide(this);
     this.updateMovement();
-    if (this.bottom > 900){ this.gameOver(); }
+    if (this.bottom > 1000){ this.gameOver(); }
     if (this.vel.x!=0 || this.vel.y!=0) {
       this.parent(this);
       return true;
@@ -43,10 +43,20 @@ var PlayerEntity = me.ObjectEntity.extend({
   }
 });
 
-var RocketEntity = me.ObjectEntity.extend( {
+var RocketEntity = me.CollectableEntity.extend( {
   init: function(x, y, settings) {
     this.parent(x, y, settings);
 
+  },
+  onCollision: function (res, obj) {
+    if(me.gamestat.getItemValue("coins") === me.gamestat.getItemValue("totalCoins")) {
+      //advance to next level
+      obj.nextLevel();
+    }
+    else {
+      alert ('please collect at least 3 coins to proceed!');
+      this.collidable = false;
+    }
   }
 });
 var CoinEntity = me.CollectableEntity.extend({
@@ -54,18 +64,19 @@ var CoinEntity = me.CollectableEntity.extend({
     this.parent(x, y, settings);
   },
   onCollision : function (res, obj) {
+    RocketEntity.collidable = true;
     me.gamestat.updateValue("coins", 1);
     this.collidable = false;
     me.game.remove(this);
-    if(me.gamestat.getItemValue("coins") === me.gamestat.getItemValue("totalCoins")){
-      if (me.gamestat.getItemValue("currentLevel") == 2) {
-        obj.gameOver();
-      }
-      else
-      {
-        obj.nextLevel();
-      }
-    }
+    //if(me.gamestat.getItemValue("coins") === me.gamestat.getItemValue("totalCoins")){
+    //  if (me.gamestat.getItemValue("currentLevel") == 3) {
+    //    obj.gameOver();
+    //  }
+    //  else
+    //  {
+    //    obj.nextLevel();
+    //  }
+    //}
   }
 });
 var EnemyEntity = me.ObjectEntity.extend({
@@ -87,6 +98,7 @@ var EnemyEntity = me.ObjectEntity.extend({
       me.game.remove(this);
     }
     else {
+      console.log('you died');
       obj.gameOver();
     }
   },
