@@ -5,6 +5,7 @@ var PlayScreen = me.ScreenObject.extend({
   },
   onResetEvent: function() {
     me.levelDirector.loadLevel("1");
+    $('#scoreCounter').html('0');
     snd.play();
     me.input.bindKey(me.input.KEY.LEFT, "left");
     me.input.bindKey(me.input.KEY.RIGHT, "right");
@@ -22,7 +23,8 @@ var TitleScreen = me.ScreenObject.extend({
     if (this.title == null) {
       this.title = me.loader.getImage("titleScreen");
       document.getElementById('game_state').innerHTML = "";
-      document.getElementById('instructions').innerHTML = ""; 
+      document.getElementById('instructions').innerHTML = "";
+      $('#scoreCounter').html('');
     }
   },
   update: function() {
