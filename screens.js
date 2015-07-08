@@ -7,8 +7,8 @@ var PlayScreen = me.ScreenObject.extend({
     //me.audio.playTrack("rocketman");
     me.input.bindKey(me.input.KEY.LEFT, "left");
     me.input.bindKey(me.input.KEY.RIGHT, "right");
-    document.getElementById('game_state').innerHTML = "Collect all of the coins!";
-    document.getElementById('instructions').innerHTML = "Arrows to move and Space/Up to jump.";
+    document.getElementById('game_state').innerHTML = "Collect 3 Coins and Find the Rocket to Move on to the Next Level!";
+    document.getElementById('instructions').innerHTML = "Arrows to Move and Up to jump.";
   }
 });
 var TitleScreen = me.ScreenObject.extend({
@@ -27,7 +27,6 @@ var TitleScreen = me.ScreenObject.extend({
   update: function() {
     if (me.input.isKeyPressed('jump')) {
       me.state.change(me.state.PLAY);
-      //me.audio.playTrack("rocketman.mp3");
     }
     return true;
   },
