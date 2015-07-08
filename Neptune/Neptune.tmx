@@ -20879,7 +20879,17 @@
     <property name="spritewidth" value="16"/>
    </properties>
   </object>
-  <object id="29" x="1524" y="564"/>
-  <object id="30" x="2347" y="834" width="28" height="31"/>
+  <object id="29" name="coin" x="1524" y="564">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="30" name="coin" x="2347" y="834" width="28" height="31">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
