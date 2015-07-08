@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="30" tilewidth="32" tileheight="32" nextobjectid="44">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="30" tilewidth="32" tileheight="32" nextobjectid="47">
  <tileset firstgid="1" name="pluto" tilewidth="32" tileheight="32">
   <image source="pluto.jpg" width="237" height="213"/>
   <tile id="8">
@@ -235,6 +235,26 @@
   <object id="41" name="coin" x="2697" y="611">
    <properties>
     <property name="image" value="coin"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="powerUps">
+  <object id="44" name="growth" x="197" y="729" width="21" height="22">
+   <properties>
+    <property name="image" value="growth"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="45" name="higherJump" x="1579" y="699" width="26" height="22">
+   <properties>
+    <property name="image" value="higherJump"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="46" name="fasterRun" x="2147" y="699" width="29" height="26">
+   <properties>
+    <property name="image" value="fasterRun"/>
     <property name="spritewidth" value="16"/>
    </properties>
   </object>

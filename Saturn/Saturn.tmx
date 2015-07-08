@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="30" tilewidth="32" tileheight="32" nextobjectid="21">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="30" tilewidth="32" tileheight="32" nextobjectid="27">
  <tileset firstgid="1" name="Saturn" tilewidth="32" tileheight="32">
   <image source="saturn.jpg" width="617" height="480"/>
   <tile id="1">
@@ -33857,5 +33857,26 @@
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="powerUps">
+  <object id="21" name="higherJump" x="736.364" y="687.879" width="24.2424" height="24.2424">
+   <properties>
+    <property name="image" value="higherJump"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="23" name="invinsibility" x="1593.94" y="315.152" width="39.3939" height="39.3939">
+   <properties>
+    <property name="image" value="invinsibility"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="24" name="higherJump" x="1927.27" y="657.576" width="45.4545" height="48.4848">
+   <properties>
+    <property name="image" value="higherJump"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="26" name="shrink" x="1927" y="605" width="45" height="47"/>
  </objectgroup>
 </map>

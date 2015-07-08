@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="30" tilewidth="32" tileheight="32" nextobjectid="12">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="30" tilewidth="32" tileheight="32" nextobjectid="14">
  <tileset firstgid="1" name="Uranus" tilewidth="32" tileheight="32">
   <image source="Uranus.jpg" width="1720" height="1720"/>
   <tile id="0">
@@ -12635,6 +12635,20 @@
    <properties>
     <property name="image" value="rocket"/>
     <property name="spritewidth" value="342"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="powerUps">
+  <object id="12" name="fasterRun" x="518.182" y="469.697" width="39.3939" height="42.4242">
+   <properties>
+    <property name="image" value="fasterRun"/>
+    <property name="spritewidth" value="16"/>
+   </properties>
+  </object>
+  <object id="13" name="higherJump" x="1781.82" y="557.576" width="45.4545" height="45.4545">
+   <properties>
+    <property name="image" value="higherJump"/>
+    <property name="spritewidth" value="16"/>
    </properties>
   </object>
  </objectgroup>
