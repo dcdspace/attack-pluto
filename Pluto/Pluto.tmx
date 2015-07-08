@@ -243,19 +243,19 @@
   <object id="44" name="growth" x="197" y="729" width="21" height="22">
    <properties>
     <property name="image" value="growth"/>
-    <property name="spritewidth" value="16"/>
+    <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object id="45" name="higherJump" x="1579" y="699" width="26" height="22">
    <properties>
     <property name="image" value="higherJump"/>
-    <property name="spritewidth" value="16"/>
+    <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object id="46" name="fasterRun" x="2147" y="699" width="29" height="26">
    <properties>
     <property name="image" value="fasterRun"/>
-    <property name="spritewidth" value="16"/>
+    <property name="spritewidth" value="32"/>
    </properties>
   </object>
  </objectgroup>

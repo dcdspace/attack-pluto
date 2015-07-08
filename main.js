@@ -22,11 +22,11 @@ var jsApp = {
     me.entityPool.add("coin", CoinEntity);
     me.entityPool.add("rocket", RocketEntity);
     me.entityPool.add("EnemyEntity", EnemyEntity);
-    me.entityPool.add("BootJumpEntity", BootJumpEntity);
-    me.entityPool.add("BootFastEntity", BootFastEntity);
-    me.entityPool.add("BootSlowEntity", BootSlowEntity);
-    me.entityPool.add("GrowEntity", GrowEntity);
-    me.entityPool.add("ShrinkEntity", ShrinkEntity);
+    me.entityPool.add("higherJump", BootJumpEntity);
+    me.entityPool.add("fasterRun", BootFastEntity);
+    me.entityPool.add("slowerSpeed", BootSlowEntity);
+    me.entityPool.add("growth", GrowEntity);
+    me.entityPool.add("shrink", ShrinkEntity);
     me.state.set(me.state.PLAY, new PlayScreen());
     me.state.set(me.state.MENU, new TitleScreen());
     me.state.set(me.state.GAMEOVER, new DeathScreen());

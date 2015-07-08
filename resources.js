@@ -79,6 +79,26 @@ var resources = [
   { name: "Uranus",
     type: "image",
     src: "Uranus/Uranus.jpg"
+  },
+  { name: "growth",
+    type: "image",
+    src: "PowerUps/growth.png"
+  },
+  { name: "shrink",
+    type: "image",
+    src: "PowerUps/shrink.png"
+  },
+  { name: "slowerSpeed",
+    type: "image",
+    src: "PowerUps/slowerSpeed.png"
+  },
+  { name: "higherJump",
+    type: "image",
+    src: "PowerUps/higherJump.png"
+  },
+  { name: "fasterRun",
+    type: "image",
+    src: "PowerUps/fasterRun.png"
   }
 
 

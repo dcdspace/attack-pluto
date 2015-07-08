@@ -142,7 +142,7 @@ var BootJumpEntity = me.CollectableEntity.extend({
   onCollision : function (res, obj) {
     this.collidable = false;
     me.game.remove(this);
-    obj.gravity = obj.gravity/4;
+    obj.gravity = obj.gravity/2;
   }
 });
 
@@ -176,8 +176,8 @@ var GrowEntity = me.CollectableEntity.extend({
   onCollision: function (res, obj) {
     this.collidable = false;
     me.game.remove(this);
-    obj.settings.spritewidth = 64;
-    obj.settings.spriteheight = obj.settings.spriteheight * 2;
+    obj.scale.x = 2;
+    obj.scale.y = 2;
   }
 });
 
@@ -188,7 +188,7 @@ var ShrinkEntity = me.CollectableEntity.extend({
   onCollision: function (res, obj) {
     this.collidable = false;
     me.game.remove(this);
-    obj.settings.spritewidth = 16;
-    obj.settings.spriteheight = obj.settings.spriteheight / 2;
+    obj.scale.x = 1/2;
+    obj.scale.y = 1/2;
   }
 });
