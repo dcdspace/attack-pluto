@@ -38,7 +38,7 @@ var resources = [
   },
   { name: "badguy",
     type: "image",
-    src: "Pluto/badguy.png"
+    src: "badDylan.png"
   },
   { name: "ice",
     type: "image",
