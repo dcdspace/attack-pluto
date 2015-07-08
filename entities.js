@@ -26,6 +26,8 @@ var PlayerEntity = me.ObjectEntity.extend({
     me.gamestat.setValue("currentLevel", 1);
     me.gamestat.setValue("coins", 0);
     me.state.change(me.state.MENU);
+    $('#scoreCounter').html('');
+
   },
   nextLevel: function () {
     var currentLevel = me.gamestat.getItemValue('currentLevel');
@@ -82,6 +84,8 @@ var CoinEntity = me.CollectableEntity.extend({
     //    obj.nextLevel();
     //  }
     //}
+
+    $('#scoreCounter').html(me.gamestat.getItemValue('coins') * 100);
   }
 });
 var EnemyEntity = me.ObjectEntity.extend({
