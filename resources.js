@@ -1,13 +1,23 @@
 var resources = [
   {
-    name: "level1",
+    name: "1",
     type: "tmx",
     src: "Pluto/Pluto.tmx"
   },
   {
-    name: "level2",
+    name: "2",
     type: "tmx",
     src: "Neptune/Neptune.tmx"
+  },
+  {
+    name: "3",
+    type: "tmx",
+    src: "Uranus/uranus.tmx"
+  },
+  {
+    name: "4",
+    type: "tmx",
+    src: "Saturn/Saturn.tmx"
   },
   {
     name: "player",
@@ -57,6 +67,14 @@ var resources = [
   { name: "rocket",
     type: "image",
     src: "SharedGraphics/rocket.png"
+  },
+  { name: "Cloud",
+    type: "image",
+    src: "Uranus/Cloud.jpg"
+  },
+  { name: "Uranus",
+    type: "image",
+    src: "Uranus/Uranus.jpg"
   }
 
 

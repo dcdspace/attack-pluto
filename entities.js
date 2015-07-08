@@ -26,11 +26,12 @@ var PlayerEntity = me.ObjectEntity.extend({
     me.state.change(me.state.MENU);
   },
   nextLevel: function () {
-    me.gamestat.updateValue("currentLevel", me.gamestat.getItemValue('currentLevel') + 1);
-    me.levelDirector.loadLevel("level2");
+    var currentLevel = me.gamestat.getItemValue('currentLevel');
+    console.log("current level: " + currentLevel)
+    me.gamestat.setValue("currentLevel",currentLevel + 1);
+    console.log("new current level: " +  me.gamestat.getItemValue('currentLevel'))
+    me.levelDirector.loadLevel(me.gamestat.getItemValue('currentLevel'));
     me.gamestat.setValue("coins", 0);
-    me.gamestat.setValue("totalCoins", 3);
-
   },
   youWin: function() {
     me.state.change(me.state.MENU);
@@ -94,8 +95,9 @@ var EnemyEntity = me.ObjectEntity.extend({
     this.collidable = true;
   },
   onCollision: function(res, obj) {
-    console.log("player: " + obj.bottom + "snake: " + this.top);
-    if (obj.bottom < this.top + 3) {
+    var snakeTop = this.bottom - 3
+    console.log("player: " + obj.pos.y + "snake: " + this.pos.y);
+    if (obj.pos.y < this.pos.y) {
       obj.forceJump();
       me.game.remove(this);
     }
