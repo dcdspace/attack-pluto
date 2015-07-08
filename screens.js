@@ -1,10 +1,11 @@
+var snd = new Audio("rocketman.mp3"); // buffers automatically when created
 var PlayScreen = me.ScreenObject.extend({
   onDestroyEvent: function() {
     me.gamestat.reset("coins");
   },
   onResetEvent: function() {
     me.levelDirector.loadLevel("1");
-    //me.audio.playTrack("rocketman");
+    snd.play();
     me.input.bindKey(me.input.KEY.LEFT, "left");
     me.input.bindKey(me.input.KEY.RIGHT, "right");
     document.getElementById('game_state').innerHTML = "Collect 3 Coins and Find the Rocket to Move on to the Next Level!";
