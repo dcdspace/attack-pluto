@@ -23,6 +23,8 @@ var PlayerEntity = me.ObjectEntity.extend({
     this.doJump();
   },
   gameOver: function() {
+    me.gamestat.setValue("currentLevel", 1);
+    me.gamestat.setValue("coins", 0);
     me.state.change(me.state.MENU);
   },
   nextLevel: function () {
