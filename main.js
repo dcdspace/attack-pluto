@@ -22,8 +22,14 @@ var jsApp = {
     me.entityPool.add("coin", CoinEntity);
     me.entityPool.add("rocket", RocketEntity);
     me.entityPool.add("EnemyEntity", EnemyEntity);
+    me.entityPool.add("BootJumpEntity", BootJumpEntity);
+    me.entityPool.add("BootFastEntity", BootFastEntity);
+    me.entityPool.add("BootSlowEntity", BootSlowEntity);
+    me.entityPool.add("GrowEntity", GrowEntity);
+    me.entityPool.add("ShrinkEntity", ShrinkEntity);
     me.state.set(me.state.PLAY, new PlayScreen());
     me.state.set(me.state.MENU, new TitleScreen());
+    me.state.set(me.state.GAMEOVER, new DeathScreen());
     me.state.transition("fade", "#00000", 250);
     me.state.change(me.state.MENU);
   }

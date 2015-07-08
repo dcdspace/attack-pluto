@@ -25,7 +25,7 @@ var PlayerEntity = me.ObjectEntity.extend({
   gameOver: function() {
     me.gamestat.setValue("currentLevel", 1);
     me.gamestat.setValue("coins", 0);
-    me.state.change(me.state.MENU);
+    me.state.change(me.state.GAMEOVER);
     $('#scoreCounter').html('');
 
   },
@@ -132,5 +132,63 @@ var EnemyEntity = me.ObjectEntity.extend({
       return true;
     }
     return false;
+  }
+});
+
+var BootJumpEntity = me.CollectableEntity.extend({
+  init: function(x, y, settings) {
+    this.parent(x, y, settings);
+  },
+  onCollision : function (res, obj) {
+    this.collidable = false;
+    me.game.remove(this);
+    obj.gravity = obj.gravity/4;
+  }
+});
+
+var BootFastEntity = me.CollectableEntity.extend({
+  init: function(x, y, settings) {
+    this.parent(x, y, settings);
+  },
+  onCollision : function (res, obj) {
+    this.collidable = false;
+    me.game.remove(this);
+    obj.velocity = obj.velocity*2;
+
+  }
+});
+
+var BootSlowEntity = me.CollectableEntity.extend({
+  init: function (x, y, settings) {
+    this.parent(x, y, settings);
+  },
+  onCollision: function (res, obj) {
+    this.collidable = false;
+    me.game.remove(this);
+    obj.velocity = obj.velocity / 2;
+  }
+});
+
+var GrowEntity = me.CollectableEntity.extend({
+  init: function (x, y, settings) {
+    this.parent(x, y, settings);
+  },
+  onCollision: function (res, obj) {
+    this.collidable = false;
+    me.game.remove(this);
+    obj.settings.spritewidth = 64;
+    obj.settings.spriteheight = obj.settings.spriteheight * 2;
+  }
+});
+
+var ShrinkEntity = me.CollectableEntity.extend({
+  init: function (x, y, settings) {
+    this.parent(x, y, settings);
+  },
+  onCollision: function (res, obj) {
+    this.collidable = false;
+    me.game.remove(this);
+    obj.settings.spritewidth = 16;
+    obj.settings.spriteheight = obj.settings.spriteheight / 2;
   }
 });

@@ -28,6 +28,10 @@ var resources = [
     type: "image",
     src: "titleScreen.png"
   },
+  { name: "DiePage",
+    type: "image",
+    src: "DiePage.png"
+  },
   { name: "Neptune",
     type: "image",
     src: "Neptune/Neptune.jpg"
