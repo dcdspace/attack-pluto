@@ -24,12 +24,9 @@ var PlayerEntity = me.ObjectEntity.extend({
     this.doJump();
   },
   youWin: function() {
-    //me.gamestat.setValue("currentLevel", 1);
+    me.gamestat.setValue("currentLevel", 1);
     me.gamestat.setValue("coins", 0);
     me.state.change(me.state.MENU);
-    var myVideo = document.getElementById("aerosmith");
-    $('#aerosmith').hide('slow');
-    myVideo.play();
     $('#scoreCounter').html('');
   },
   gameOver: function() {
