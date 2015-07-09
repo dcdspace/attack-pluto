@@ -20896,25 +20896,25 @@
   <object id="31" name="shrink" x="750" y="229" width="30" height="31">
    <properties>
     <property name="image" value="shrink"/>
-    <property name="spritewidth" value="16"/>
+    <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object id="32" name="slowerSpeed" x="1165" y="565" width="29" height="21">
    <properties>
     <property name="image" value="slowerSpeed"/>
-    <property name="spritewidth" value="16"/>
+    <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object id="34" name="higherJump" x="2503" y="855" width="29" height="24">
    <properties>
     <property name="image" value="higherJump"/>
-    <property name="spritewidth" value="16"/>
+    <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object id="36" name="higherJump" x="1886" y="863" width="24" height="24">
    <properties>
     <property name="image" value="higherJump"/>
-    <property name="spritewidth" value="16"/>
+    <property name="spritewidth" value="32"/>
    </properties>
   </object>
  </objectgroup>

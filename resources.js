@@ -99,6 +99,10 @@ var resources = [
   { name: "fasterRun",
     type: "image",
     src: "PowerUps/fasterRun.png"
+  },
+  { name: "invinsibility",
+    type: "image",
+    src: "PowerUps/invinsibility.png"
   }
 
 

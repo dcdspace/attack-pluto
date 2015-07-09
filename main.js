@@ -14,8 +14,12 @@ var jsApp = {
     me.loader.preload(resources);
     me.state.change(me.state.LOADING);
     me.gamestat.add("coins", 0);
-    me.gamestat.add("totalCoins", 3);
+    me.gamestat.add("totalCoins", 1);
     me.gamestat.add("currentLevel", 1);
+    me.gamestat.setValue("currentLevel", 1);
+    me.gamestat.setValue("totalCoins", 2);
+
+
   },
   loaded: function() {
     me.entityPool.add("player", PlayerEntity);
@@ -25,6 +29,7 @@ var jsApp = {
     me.entityPool.add("higherJump", BootJumpEntity);
     me.entityPool.add("fasterRun", BootFastEntity);
     me.entityPool.add("slowerSpeed", BootSlowEntity);
+    me.entityPool.add("invinsibility", InvinsibilityEntity);
     me.entityPool.add("growth", GrowEntity);
     me.entityPool.add("shrink", ShrinkEntity);
     me.state.set(me.state.PLAY, new PlayScreen());
@@ -36,4 +41,11 @@ var jsApp = {
 };
 window.onReady(function() {
   jsApp.onload();
+  var myVideo = document.getElementById("aerosmith");
+  $('#aerosmith').hide('slow');
+  $('#restart').click(function() {
+    $('#aerosmith').hide('slow');
+    myVideo.load();
+  });
 });
+

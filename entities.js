@@ -3,7 +3,8 @@ var PlayerEntity = me.ObjectEntity.extend({
     this.parent(x, y, settings);
     me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
     this.setVelocity(4, 10);
-    this.gravity = this.gravity / 3
+    this.gravity = this.gravity / 3;
+    this.invinsible = false;
   },
   update: function() {
     if (me.input.isKeyPressed('left')) { this.move(true); }
@@ -22,6 +23,15 @@ var PlayerEntity = me.ObjectEntity.extend({
   playerJump: function () {
     this.doJump();
   },
+  youWin: function() {
+    //me.gamestat.setValue("currentLevel", 1);
+    me.gamestat.setValue("coins", 0);
+    me.state.change(me.state.MENU);
+    var myVideo = document.getElementById("aerosmith");
+    $('#aerosmith').hide('slow');
+    myVideo.play();
+    $('#scoreCounter').html('');
+  },
   gameOver: function() {
     me.gamestat.setValue("currentLevel", 1);
     me.gamestat.setValue("coins", 0);
@@ -31,16 +41,11 @@ var PlayerEntity = me.ObjectEntity.extend({
   },
   nextLevel: function () {
     var currentLevel = me.gamestat.getItemValue('currentLevel');
-    console.log("current level: " + currentLevel)
+    console.log("current level: " + currentLevel);
     me.gamestat.setValue("currentLevel",currentLevel + 1);
     console.log("new current level: " +  me.gamestat.getItemValue('currentLevel'))
     me.levelDirector.loadLevel(me.gamestat.getItemValue('currentLevel'));
     me.gamestat.setValue("coins", 0);
-  },
-  youWin: function() {
-    me.state.change(me.state.MENU);
-    document.getElementById('game_state').innerHTML = "You Win!";
-    document.getElementById('instructions').innerHTML = "";
   },
   move: function(moveLeft) {
     this.flipX(moveLeft);
@@ -56,7 +61,13 @@ var RocketEntity = me.CollectableEntity.extend( {
   onCollision: function (res, obj) {
     if(me.gamestat.getItemValue("coins") >= me.gamestat.getItemValue("totalCoins")) {
       //advance to next level
-      obj.nextLevel();
+      console.log('current level ' + me.gamestat.getItemValue("currentLevel"));
+      if (me.gamestat.getItemValue("currentLevel") == '4') {
+        obj.youWin();
+      }
+      else {
+        obj.nextLevel();
+      }
     }
     else {
       alert ('please collect at least 3 coins to proceed!');
@@ -85,7 +96,7 @@ var CoinEntity = me.CollectableEntity.extend({
     //  }
     //}
 
-    $('#scoreCounter').html(me.gamestat.getItemValue('coins') * 100);
+    $('#scoreCounter').html("Score: " + me.gamestat.getItemValue('coins') * 100);
   }
 });
 var EnemyEntity = me.ObjectEntity.extend({
@@ -103,7 +114,7 @@ var EnemyEntity = me.ObjectEntity.extend({
   onCollision: function(res, obj) {
     var snakeTop = this.bottom - 3
     console.log("player: " + obj.pos.y + "snake: " + this.pos.y);
-    if (obj.pos.y < this.pos.y) {
+    if (obj.pos.y < this.pos.y || obj.invinsible == true) {
       obj.forceJump();
       me.game.remove(this);
     }
@@ -190,5 +201,16 @@ var ShrinkEntity = me.CollectableEntity.extend({
     me.game.remove(this);
     obj.scale.x = 1/2;
     obj.scale.y = 1/2;
+  }
+});
+
+var InvinsibilityEntity = me.CollectableEntity.extend({
+  init: function (x, y, settings) {
+    this.parent(x, y, settings);
+  },
+  onCollision: function (res, obj) {
+    this.collidable = false;
+    me.game.remove(this);
+    obj.invinsible = true;
   }
 });
