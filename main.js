@@ -34,6 +34,7 @@ var jsApp = {
     me.entityPool.add("shrink", ShrinkEntity);
     me.state.set(me.state.PLAY, new PlayScreen());
     me.state.set(me.state.MENU, new TitleScreen());
+    me.state.set(me.state.LOADING, new loadingScreen());
     me.state.set(me.state.GAMEOVER, new DeathScreen());
     me.state.transition("fade", "#00000", 250);
     me.state.change(me.state.MENU);

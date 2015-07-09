@@ -63,3 +63,17 @@ var DeathScreen = me.ScreenObject.extend({
   }
 });
 
+var loadingScreen = me.ScreenObject.extend({
+  init: function() {
+    this.parent(true);
+  },
+  onResetEvent: function() {
+    if (this.title == null) {
+      this.title = me.loader.getImage("loading");
+    }
+  },
+  draw: function(context){
+    context.drawImage(me.loader.getImage("loading"), 0, 0);
+  }
+});
+

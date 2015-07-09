@@ -37,6 +37,7 @@ var PlayerEntity = me.ObjectEntity.extend({
 
   },
   nextLevel: function () {
+    me.state.change(me.state.LOADING);
     var currentLevel = me.gamestat.getItemValue('currentLevel');
     console.log("current level: " + currentLevel);
     me.gamestat.setValue("currentLevel",currentLevel + 1);
@@ -63,6 +64,7 @@ var RocketEntity = me.CollectableEntity.extend( {
         obj.youWin();
       }
       else {
+        me.state.change(me.state.LOADING);
         obj.nextLevel();
       }
     }

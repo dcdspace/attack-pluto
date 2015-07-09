@@ -44,6 +44,10 @@ var resources = [
     type: "image",
     src: "badWestMord.png"
   },
+  { name: "loading",
+    type: "image",
+    src: "loadingPage.png"
+  },
   { name: "ice",
     type: "image",
     src: "SharedGraphics/ice.jpg"
